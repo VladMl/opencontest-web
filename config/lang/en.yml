@@ -1,0 +1,108 @@
+Main: Main
+Contests: Contests
+ContestResults: Results
+PreviousResults: Previous results
+Services: Services
+EDIVisualizer: EDI visualizer
+QSOMap: QSO map
+Contests: Contests
+PaperQSO: PaperQSO simple log
+Date: Date
+ContestName: Contest
+State: State   
+Results: Results
+Reports: Reports
+ClaimedResults: Claimed
+ListOfParticipants: Participants
+UploadReport: Upload
+DownloadReport: Download
+OverallResults: Overall
+UkraineResults: Ukraine
+MissingReports: Missing Reports
+Callsign: Callsign
+Locator: Locator
+ClaimedQSO: Claimed QSO
+ClaimedScore: Claimed score
+QSOWithErrors: QSO with errors
+Claimed: Claimed
+Confirmed: Confirmed
+Time: Time
+Exchange: Exch
+Report: Report
+NotInReport: NIL
+NoReport: No report
+ConfirmationPercent: 'Confirmation %'
+Score: Score
+Mode: Mode
+Sent: Sent
+ReportSent: RST
+ExchangeSent: Number
+Received: Received
+ReportReceived: RST
+ExchangeReceived: Number
+Distance: Distance
+Score: Score
+Error: Error description
+Bands: Bands
+Comments: Comments
+Add: Add
+CONTEST_VHF_MARATHON: VHF CW Marathon
+CONTEST_UKRAINE_VHF_CUP: Ukraine VHF Cup 
+CONTEST_VHF_COMMITTE_CUP: VHF Committee Cup
+CHALAPKO: VHF contest "UT5EU V. Chalapko Memorial"
+FIELD_DAY: Field Day
+CONTEST_50_MHZ_CUP: Ukraine Cup 50 Mhz
+CONTEST_UKRAINE_CHAMPIONSHIP: VHF Ukraine championship
+ST-CREATED: Not started
+ST-READY: Report loading
+ST-REPORT-UPLOADED: Report loading completed
+ST-REPORT-EXCHANGING: Exchanging reports
+ST-BACKLOG-REPAIRED: Report loading completed
+ST-CLAIMED_SCORE_PUBLISHED: Claimed results
+ST-VALIDATED: Verified
+ST-FINAL-SCORE-PROCESSED: Final score proccessed
+ST-PRELIMINARY-RESULT-PUBLISHED: Preliminary results
+ST-FINAL-RESULT-PUBLISHED: Final results
+CATEGORY_SINGLE: SINGLE
+SINGLE: SINGLE
+MULTI: MULTI
+CATEGORY_MULTI: MULTI
+A: SIGNLE
+B: MULTI
+C: PHONE
+D: FOREIGNER
+H6: 6 HOURS
+CATEGORY_6H: 6 HOURS
+CATEGORY_FOREIGN_COUNTRY: FOREIGNER
+CATEGORY_PHONE: PHONE
+CHECKLOG: CHECKLOG
+A_CHALAPKO: A-50MHz Up, MO
+B_CHALAPKO: B-50MHz Up, SO
+C_CHALAPKO: C-144MHz Up, MO
+D_CHALAPKO: D-144MHz Up, SO
+E_CHALAPKO: E-144MHz Up, FM
+F_CHALAPKO: F-144MHz SO
+H_CHALAPKO: H-50MHz F
+G_CHALAPKO: G-50MHz SO
+I_CHALAPKO: I-144MHz F
+CATEGORY_CHECK_LOG: CHECKLOG
+A_MOMB_MIX: A (MOMB-MIX)
+B_SOMB_MIX: B (SOMB-MIX)
+C_SOMB_PHONE: C (SOMB-PHONE)
+D_SOMB_FM: D (SOMB-FM)
+E_SOSB_MIX_144: E (SOSB-MIX-144)
+F_SOSB_MIX_432: F (SOSB-MIX-432)
+G_MOMB_MIX_Y: G (MOMB-MIX-Y) - up to 25 years
+H_SOMB_MIX_Y: H (SOMB-MIX-Y) - up to 25 years
+ERR_QSO_NOT_FOUND: QSO not found
+ERR_WRONG_LOCATOR_CORR: "Wrong locator.<br>Station received :"
+ERR_WRONG_LOCATOR: "Wrong locator<br>Station sent :"
+ERR_DUPE: Dupe
+ERR_WRONG_EXCHANGE_CORR: "Wrong exchange<br>Station received :"
+ERR_WRONG_EXCHANGE: "Wrong exchange<br>Station sent :"
+ERR_WRONG_RST_CORR: "Wrong RST<br>Station received :"
+ERR_WRONG_RST: "Wrong RST<br>Station sent :"
+ERR_WRONG_DATE_TIME: Wrong date/time
+ERR_WRONG_BAND: Wrong band
+ERR_REPORT_NOT_FOUND: Report not found
+ERR_OUT_OF_TIME_6H: Out of time 6H

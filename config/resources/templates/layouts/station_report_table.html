@@ -1,0 +1,87 @@
+
+
+<div class="card">
+    <div class="card-block">
+        <div class="card-body">
+            <table cellpadding="2">
+                <tr>
+                    <td>Callsign:</td>
+                    <td><b>{{ callsign }}</b></td>
+                </tr>
+                <tr>
+                    <td>Locator:</td>
+                    <td>{{ locatior }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="card-block">
+        <div class="card-body">
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered dataex-fixh-basic contest-results">
+
+            <thead class="bg-info">
+              <tr>
+                  <th rowspan="2">N</th>
+                  <th rowspan="2">{{ Date }}</th>
+                  <th rowspan="2">{{ Callsign }}</th>
+                  <th rowspan="2">{{ Mode }}</th>
+                  <th rowspan="1" colspan="2">{{ Sent }}</th>
+                  <th rowspan="1" colspan="2">{{ Received }}</th>
+                  <th rowspan="2">{{ Locator }}</th>
+                  <th rowspan="2">{{ Distance }}</th>
+                  <th rowspan="2">{{ Score }}</th>
+                  <th rowspan="2">{{ Error }}</th>
+              </tr>
+              <tr>
+                  <th>{{ ReportSent }}</th>
+                  <th>{{ ExchangeSent }}</th>
+                  <th>{{ ReportReceived }}</th>
+                  <th>{{ ExchangeReceived }}</th>
+              </tr>
+            </thead>
+            <tbody>
+            {{ #stationReport }}
+
+            {{ #bandDelimiter }}
+               <tr><td colspan="12" class="bg-yellow bg-lighten-4"><center>{{ bandEdi }}</center></td></tr>
+            {{ /bandDelimiter }}
+
+
+            <tr {{ #error }} class="bg-danger bg-lighten-3" {{ /error }}>
+                <td>{{ index }}</td>
+                <td>{{ dateFormatted }}</td>
+
+                <td><i class="flag-icon flag-icon-{{ countryId }}"></i>&nbsp;
+                    {{ #crossLink }}
+                       <a class="table" href="/results/{{ contestId }}/station/{{ callsignWkd }}">{{ callsignWkd }}</a>
+                    {{ /crossLink }}
+                    {{ ^crossLink }}
+                       {{ callsignWkd }}
+                    {{ /crossLink }}
+                </td>
+                <td>{{ mode }}</td>
+                <td align="right">{{ rstSent }}</td>
+                <td align="right">{{ exchSent }}</td>
+                <td align="right">{{ rstRcvd }}</td>
+                <td align="right">{{ exchRcvd }}</td>
+                <td>{{ locatiorWkd }}</td>
+                <td align="right">{{ distance }}</td>
+                <td align="right">{{ score }}</td>
+                <td>{{{ errorDescription  }}}</td>
+
+            </tr>
+            {{ /stationReport }}
+            </tbody>
+        </table>
+    </div>
+        </div>
+    </div>
+
+
+</div>
+
+

@@ -1,0 +1,49 @@
+
+
+<div class="card">
+
+    <div class="card-header no-border-bottom">
+
+        <h4 class="card-title">{{ ListOfParticipants }}</h4>
+
+        <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+        <div class="heading-elements">
+            <div><span><button type="button" class="btn mr-1 mb-1 btn-outline-success btn-sm" data-toggle="modal"
+                               data-target="#stationForm">{{ Add }}</button></span></div>
+        </div>
+
+    </div>
+
+
+    <div class="card-block">
+
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-bordered dataex-fixh-basic contest-results">
+
+                <thead class="bg-info">
+                <tr>
+                    <th>{{ Callsign }}</th>
+                    <th>{{ Locator }}</th>
+                    <th>{{ Bands }}</th>
+                    <th>{{ Comments}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{ #participantList }}
+                <tr>
+                    <td><i class="flag-icon flag-icon-{{ countryId }}"></i>&nbsp;{{ callsign }}</td>
+                    <td>{{ locator }}</td>
+                    <td>{{ bands }}</td>
+                    <td>{{ comments }}</td>
+                </tr>
+                {{ /participantList  }}
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+</div>

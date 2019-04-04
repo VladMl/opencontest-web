@@ -1,0 +1,57 @@
+{{> header}}
+
+
+<div class="row">
+
+    <div class="content-header-left col-md-6 col-12 mb-2">
+        <h3 class="content-header-title mb-0">{{ ContestTitle }}</h3>
+        <span>{{ ContestState }}</span>
+        <div class="row breadcrumbs-top">
+            <div class="breadcrumb-wrapper  col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">{{ Main }}</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="content-header-right col-md-6 col-12">
+        <div class="btn-group float-md-right" role="group" aria-label="Button group with nested dropdown">
+            {{ #resultOverall }}
+              <a class="btn btn-{{ ^resultsOverallPage }}outline-{{ /resultsOverallPage }}primary" href="/results/final/all/{{ contestSchedulesId }}">{{ OverallResults }}</a>
+            {{ /resultOverall }}
+            {{ #resultUkraine }}
+              <a class="btn btn-{{ ^resultsUkrainePage }}outline-{{ /resultsUkrainePage }}primary" href="/results/final/ukraine/{{ contestSchedulesId }}">{{ UkraineResults }}</a>
+            {{ /resultUkraine }}
+
+            <a class="btn btn-{{ ^missingReportsPage }}outline-{{ /missingReportsPage }}primary" href="/results/final/missing/{{ contestSchedulesId }}">{{ MissingReports }}</a>
+            <!-- <a class="btn btn-outline-primary" href="timeline-center.html">Statistics</a> -->
+        </div>
+    </div>
+
+
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        {{ #claimedResults }}
+        {{#StationList}}
+        {{> layouts/claimed_results_table}}
+        {{/StationList}}
+        {{ /claimedResults }}
+
+        {{ #finalResults }}
+        {{#StationList}}
+        {{> layouts/final_results_table}}
+        {{/StationList}}
+        {{ /finalResults }}
+
+
+        {{ #missingReports }}
+        {{> layouts/final_missing_reports_table}}
+        {{ /missingReports }}
+
+
+    </div>
+</div>
+</div>
+
+{{> footer}}

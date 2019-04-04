@@ -1,0 +1,30 @@
+<div class="card">
+
+    <div class="card-block">
+        <div class="tab-content px-1 pt-1">
+
+
+            <div class="table-responsive">
+
+                <h4 class="card-title">{{ MissingReports }}</h4>
+                <table class="table table-striped table-bordered dataex-fixh-basic contest-results">
+
+                    <thead class="bg-info">
+                    <tr>
+                        <th>{{ Callsign }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ #stationList }}
+                    <tr>
+                        <td><i class="flag-icon flag-icon-{{ countryId }}"></i>&nbsp;{{ callsign }}</td>
+                    </tr>
+                    {{ /stationList }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>

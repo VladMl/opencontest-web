@@ -1,0 +1,112 @@
+Main: Главная
+Contests: Соревнования
+ContestResults: Результаты
+PreviousResults: Предыдущие результаты
+Services: Сервисы и программы
+EDIVisualizer: EDI визуализатор
+QSOMap: Карта по квадратам
+SignIn: Войти
+Details: Подробно
+PaperQSO: PaperQSO лог
+Date: Дата
+ContestName: Соревновение
+State: Состояние   
+Results: Результаты
+Reports: Отчеты
+ListOfParticipants: Участники
+ClaimedResults: Заявленные
+UploadReport: Загрузить
+DownloadReport: Скачать
+OverallResults: Общие
+UkraineResults: Украина
+MissingReports: Отчеты отсутствуют
+Callsign: Позывной
+Locator: Локатор
+ClaimedQSO: Заявленно QSO
+ClaimedScore: Заявленно очки
+QSOWithErrors: QSO с ошибками
+Claimed: Заявл.
+Confirmed: Подтв.
+Time: Время
+Exchange: Номер
+Report: Рапорт
+Locator: Локатор
+NotInReport: Нет в отчете
+NoReport: Нет отчета
+ConfirmationPercent: '% подтв.'
+Score: Очки
+Mode: Мода
+Sent: Отправлено
+ReportSent: Рапорт
+ExchangeSent: Номер
+Received: Получено
+ReportReceived: Рапорт
+ExchangeReceived: Номер
+Distance: Дистанция
+Score: Очки
+Error: Описание ошибки
+Bands: Диапазоны
+Comments: Комментарий
+Add: Добавить
+CONTEST_VHF_MARATHON: Укв CW Марафон
+CONTEST_UKRAINE_VHF_CUP: Весенний кубок Украины по радиосвязи на УКВ
+CHALAPKO: УКВ соревнования «Мемориал Владимира Чалапко UT5EU»
+FIELD_DAY: Полевой день
+CONTEST_50_MHZ_CUP: Кубок Украины на 50 МГц
+CONTEST_UKRAINE_CHAMPIONSHIP: Чемпионат Украины на УКВ
+CONTEST_VHF_COMMITTE_CUP: Кубок УКВ комитета ЛРУ
+ST-CREATED: Не начинался
+ST-READY: Загрузка отчетов
+ST-REPORT-UPLOADED: Загрузка отчетов завершена
+ST-REPORT-EXCHANGING: Обмен отчетами
+ST-BACKLOG-REPAIRED: Загрузка отчетов завершена
+ST-CLAIMED_SCORE_PUBLISHED: Заявленные результаты
+ST-VALIDATED: Проверенно
+ST-FINAL-SCORE-PROCESSED: Финальные очки расчитаны
+ST-PRELIMINARY-RESULT-PUBLISHED: Предварительные результаты
+ST-FINAL-RESULT-PUBLISHED: Финальные результаты
+SINGLE: SINGLE - Один оператор
+CATEGORY_SINGLE: SINGLE - Один оператор
+MULTI: MULTI - Много операторов
+CATEGORY_MULTI: MULTI - Много операторов
+CATEGORY_6H: 6 часов
+CATEGORY_FOREIGN_COUNTRY: Иностранные участники
+CATEGORY_PHONE: Телефон
+A: SINGLE
+B: MULTI
+C: PHONE
+D: Иностранные участники
+H6: 6 часов
+CHECKLOG: CHECKLOG
+A_CHALAPKO: A-50MHz Up, MO
+B_CHALAPKO: B-50MHz Up, SO
+C_CHALAPKO: C-144MHz Up, MO
+D_CHALAPKO: D-144MHz Up, SO
+E_CHALAPKO: E-144MHz Up, FM
+F_CHALAPKO: F-144MHz SO
+H_CHALAPKO: H-50MHz F
+G_CHALAPKO: G-50MHz SO
+I_CHALAPKO: I-144MHz F
+CATEGORY_CHECK_LOG: CHECKLOG
+A_MOMB_MIX: A (MOMB-MIX)
+B_SOMB_MIX: B (SOMB-MIX)
+C_SOMB_PHONE: C (SOMB-PHONE)
+D_SOMB_FM: D (SOMB-FM)
+E_SOSB_MIX_144: E (SOSB-MIX-144)
+F_SOSB_MIX_432: F (SOSB-MIX-432)
+G_MOMB_MIX_Y: G (MOMB-MIX-Y) - до 25 лет включительно
+H_SOMB_MIX_Y: H (SOMB-MIX-Y) - до 25 лет включительно
+ERR_QSO_NOT_FOUND: QSO отсутсвует у корреспондента
+ERR_WRONG_LOCATOR_CORR: "Неправильно принятый локатор кореспондентом.<br>Корреспондент принял :"
+ERR_WRONG_LOCATOR: "Неправильный локатор<br>Корреспондент передавал :"
+ERR_DUPE: Повторное QSO
+ERR_WRONG_EXCHANGE_CORR: "Неправильно принятый номер кореспондентом.<br>Корреспондент принял :"
+ERR_WRONG_EXCHANGE: "Неправильный номер<br>Корреспондент передавал :"
+ERR_WRONG_RST_CORR: "Неправильно принятый рапорт кореспондентом.<br>Корреспондент принял :"
+ERR_WRONG_RST: "Неправильный рапорт<br>Корреспондент передавал :"
+ERR_WRONG_DATE_TIME: Неправильная дата или время
+ERR_WRONG_BAND: Неправильный диапазон
+ERR_REPORT_NOT_FOUND: Отчет отсутсвует
+ERR_IN_REPORT_CORRESPONDENT: В отчете корреспондента
+ERR_IN_REPORT: В отчете
+ERR_OUT_OF_TIME_6H: Вне зачетного времени 6ч

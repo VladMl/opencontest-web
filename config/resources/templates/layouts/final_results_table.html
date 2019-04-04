@@ -1,0 +1,67 @@
+<div class="card">
+
+    <div class="card-block">
+        <div class="tab-content px-1 pt-1">
+
+
+            <div class="table-responsive">
+
+                <h4 class="card-title">{{ key }}</h4>
+                <table class="table table-striped table-bordered dataex-fixh-basic contest-results">
+
+                    <thead class="bg-info">
+                    <tr>
+                        <th rowspan="2" colspan="1" valign="top">N</th>
+                        <th rowspan="2" colspan="1">{{ Callsign }}</th>
+                        <th rowspan="2" colspan="1">{{ Locator }}</th>
+                        <th rowspan="1" colspan="2">QSO</th>
+                        <th rowspan="1" colspan="6">{{ QSOWithErrors }}</th>
+                        <th rowspan="1" colspan="2">{{ Score }}</th>
+                        <th rowspan="2" colspan="1">{{ ConfirmationPercent }}</th>
+                    </tr>
+                    <tr>
+                        <th>{{ Claimed }}</th>
+                        <th>{{ Confirmed }}</th>
+                        <th>{{ Time }}</th>
+                        <th>{{ Exchange }}</th>
+                        <th>{{ Report }}</th>
+                        <th>{{ Locator }}</th>
+                        <th>{{ NotInReport }}</th>
+                        <th>{{ NoReport }}</th>
+                        <th>{{ Claimed }}</th>
+                        <th>{{ Confirmed }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{ #value }}
+                    {{ ^bandDelimiter }}
+                    <tr>
+                        <td>{{ index }}</td>
+                        <td><i class="flag-icon flag-icon-{{ countryId }}"></i>&nbsp;<a href="/results/{{ contestId }}/station/{{ callsignOriginal }}">{{ callsign }}</a></td>
+                        <td align="left">{{ locator }}</td>
+                        <td align="right">{{ claimedQso }}</td>
+                        <td align="right">{{ confirmedQso }}</td>
+                        <td align="right">{{ errTime }}</td>
+                        <td align="right">{{ errExch }}</td>
+                        <td align="right">{{ errRst }}</td>
+                        <td align="right">{{ errLoc }}</td>
+                        <td align="right">{{ errNil }}</td>
+                        <td align="right">{{ errNoReport }}</td>
+                        <td align="right">{{ claimedScore }}</td>
+                        <td align="right">{{ confirmedScore }}</td>
+                        <td align="right">{{ percentConfirmation }}</td>
+                    </tr>
+                    {{ /bandDelimiter }}
+                    {{ #bandDelimiter }}
+                         <tr><td colspan="14" class="bg-yellow bg-lighten-4"><center>{{ bandEdi }}</center></td></tr>
+                    {{ /bandDelimiter }}
+
+                    {{ /value }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>

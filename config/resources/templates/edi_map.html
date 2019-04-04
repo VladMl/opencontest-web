@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDI visualiser</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/toastr.css">
+    <style>
+         /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+         #map {
+         height: 100%;
+         }
+         /* Optional: Makes the sample page fill the window. */
+         html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+         }
+         a:link {
+         color: #ff5050;
+         }
+         /* visited link */
+         a:visited {
+         color: #ff5050;
+         }
+         /* mouse over link */
+         a:hover {
+         color: #ff5050;
+         }
+         /* selected link */
+         a:active {
+         color: #ff5050;
+         }
+         p {
+         font-size: 16px;
+         }
+      </style>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script src="/js/edi_map.js" type="text/javascript"></script>
+</head>
+<body onload="initMap();">
+<div id="map"></div>
+<script></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXmJYHridkPLOU1FBRRSIZKs1zgV9OdEY"
+        async defer></script>
+</body>
+</html>

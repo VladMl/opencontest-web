@@ -1,0 +1,110 @@
+Main: Головна
+Contests: Змагання
+ContestResults: Результати
+PreviousResults: Попередні результати
+Services: Сервіси и програми
+EDIVisualizer: EDI візуалізатор
+QSOMap: Мапа по квадратам
+SignIn: Увійти
+Details: Докладно
+PaperQSO: PaperQSO лог
+Date: Дата
+ContestName: Змагання
+State: Стан   
+Results: Результати
+Reports: Звіти
+ListOfParticipants: Участники
+ClaimedResults: Заявлені
+UploadReport: Завантажити
+DownloadReport: Скачати
+OverallResults: Загальні
+UkraineResults: Україна
+MissingReports: Звіти відсутні
+Callsign: Позивний
+Locator: Локатор
+ClaimedQSO: Заявлено QSO
+ClaimedScore: Заявлено очки
+QSOWithErrors: QSO з помилками
+Claimed: Заявл.
+Confirmed: Підтв.
+Time: Час
+Exchange: Номер
+Report: Рапорт
+Locator: Локатор
+NotInReport: Немає в звіті
+NoReport: Немає звіта
+ConfirmationPercent: '% підтв.'
+Score: Очки
+Mode: Мода
+Sent: Відправлено
+ReportSent: Рапорт
+ExchangeSent: Номер
+Received: Отримано
+ReportReceived: Рапорт
+ExchangeReceived: Номер
+Distance: Дист.
+Score: Очки
+Error: Помилка
+Bands: Діапазони
+Comments: Коментар
+Add: Додати
+CONTEST_VHF_MARATHON: УКХ CW Марафон
+CONTEST_UKRAINE_VHF_CUP: Весняний кубок України з радіозв''язку на УКХ
+CHALAPKO: УКХ-змагання «Меморіал Володимира Чалапко UT5EU»
+FIELD_DAY: Польовий день
+CONTEST_50_MHZ_CUP: Кубок Україні на 50 МГц
+CONTEST_UKRAINE_CHAMPIONSHIP: Чемпіонат Україні на УКХ
+CONTEST_VHF_COMMITTE_CUP: Кубок УКХ комітету ЛРУ
+ST-CREATED: Не почінався
+ST-READY: Завантаження звітів
+ST-REPORT-UPLOADED: Завантаження звітів закінчено
+ST-REPORT-EXCHANGING: Обмін звітами
+ST-BACKLOG-REPAIRED: Завантаження звітів закінчено
+ST-CLAIMED_SCORE_PUBLISHED: Заявлені результати
+ST-VALIDATED: Перевірено
+ST-FINAL-SCORE-PROCESSED: Фінальні очки обраховано
+ST-PRELIMINARY-RESULT-PUBLISHED: Попередні результати
+ST-FINAL-RESULT-PUBLISHED: Фінальні результати
+SINGLE: SINGLE - Один оператор
+CATEGORY_SINGLE: SINGLE - Один оператор
+MULTI: MULTI - Багато операторів
+CATEGORY_MULTI: MULTI - Багато операторів
+CATEGORY_6H: 6 годин
+CATEGORY_FOREIGN_COUNTRY: Іноземні учасники
+CATEGORY_PHONE: Телефон
+A: SINGLE
+B: MULTI
+C: PHONE
+D: Іноземні учасники
+H6: 6 годин
+CHECKLOG: CHECKLOG
+A_CHALAPKO: A-50MHz Up, MO
+B_CHALAPKO: B-50MHz Up, SO
+C_CHALAPKO: C-144MHz Up, MO
+D_CHALAPKO: D-144MHz Up, SO
+E_CHALAPKO: E-144MHz Up, FM
+F_CHALAPKO: F-144MHz SO
+H_CHALAPKO: H-50MHz F
+G_CHALAPKO: G-50MHz SO
+I_CHALAPKO: I-144MHz F
+CATEGORY_CHECK_LOG: CHECKLOG
+A_MOMB_MIX: A (MOMB-MIX)
+B_SOMB_MIX: B (SOMB-MIX)
+C_SOMB_PHONE: C (SOMB-PHONE)
+D_SOMB_FM: D (SOMB-FM)
+E_SOSB_MIX_144: E (SOSB-MIX-144)
+F_SOSB_MIX_432: F (SOSB-MIX-432)
+G_MOMB_MIX_Y: G (MOMB-MIX-Y) - до 25 років включно
+H_SOMB_MIX_Y: H (SOMB-MIX-Y) - до 25 років включно
+ERR_QSO_NOT_FOUND: QSO відсутнє у корреспондента
+ERR_WRONG_LOCATOR_CORR: "Неправильно прийнятий локатор кореспондентом.<br>Корреспондент прийняв :"
+ERR_WRONG_LOCATOR: "Неправильный локатор<br>Корреспондент передавав :"
+ERR_DUPE: Повторне QSO
+ERR_WRONG_EXCHANGE_CORR: "Неправильно прийнятий номер кореспондентом.<br>Корреспондент прийняв :"
+ERR_WRONG_EXCHANGE: "Неправильный номер<br>Корреспондент передавав :"
+ERR_WRONG_RST_CORR: "Неправильно прийнятий рапорт кореспондентом.<br>Корреспондент прийняв :"
+ERR_WRONG_RST: "Неправильный рапорт<br>Корреспондент передавав :"
+ERR_WRONG_DATE_TIME: Неправильна дата або час
+ERR_WRONG_BAND: Неправильный діапазон
+ERR_REPORT_NOT_FOUND: Звіт відсутній
+ERR_OUT_OF_TIME_6H: Поза заліковим часом 6г

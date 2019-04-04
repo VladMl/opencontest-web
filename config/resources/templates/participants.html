@@ -1,0 +1,89 @@
+{{> header}}
+
+<div class="row">
+
+    <div class="content-header-left col-md-6 col-12 mb-2">
+        <h3 class="content-header-title mb-0">{{ ContestTitle }}</h3>
+        <span>{{ ContestState }}</span>
+        <div class="row breadcrumbs-top">
+            <div class="breadcrumb-wrapper  col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">{{ Main }}</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade text-left" id="stationForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel34"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="myModalLabel34">{{ Add }}</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" novalidate>
+                    <div class="modal-body">
+                        <label>{{ Callsign }}: <span class="required">*</span></label>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" name="callsign" required placeholder="{{ Callsign }}" class="form-control"
+                                       data-validation-required-message="This field is required" autofocus>
+                            </div>
+                        </div>
+
+
+                        <label>{{ Locator }}: </label>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" name="locator" placeholder="{{ Locator }}" class="form-control" required
+                                       data-validation-required-message="This field is required">
+                            </div>
+
+                        </div>
+
+                        <label>{{ Bands }}: </label>
+
+                        <div class="form-group">
+
+                            <div class="c-inputs-stacked">
+                              {{ #listBands }}
+                                <label class="inline custom-control custom-checkbox block">
+                                    <input type="checkbox" class="custom-control-input" name="band{{ id }}">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description ml-0">{{ bandEdi }}</span>
+                                </label>
+                                {{ /listBands }}
+                            </div>
+                        </div>
+
+
+                        <label>{{ Comments }}: </label>
+                        <div class="form-group">
+                            <textarea name="comments" class="form-control" rows="3" cols="60"></textarea>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-outline-primary btn-lg" value="{{ Add }}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        {{> layouts/participants_table}}
+    </div>
+
+</div>
+
+
+
+{{> footer}}

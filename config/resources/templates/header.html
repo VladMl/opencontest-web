@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loading">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="vhf contest, edi map, qso map, contest score">
+    <meta name="author" content="UT4UKW">
+    <title>Opencontest</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/contest/app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- BEGIN VE CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="/css/components.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/feather/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropzone.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/colors.min.css">
+    <!-- END STACK CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/vertical-overlay-menu.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--CUSTOM CSS-->
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+
+    <script src="/js/opencontest.js"></script>
+
+</head>
+<body data-open="click" data-menu="horizontal-menu" data-col="2-columns" class="horizontal-layout horizontal-menu 2-columns   menu-expanded" >
+
+<!-- navbar-fixed-top-->
+
+
+<!-- Horizontal navigation-->
+<div role="navigation" data-menu="menu-wrapper" class="header-navbar navbar navbar-horizontal navbar-fixed navbar-light navbar-without-dd-arrow navbar-shadow menu-border">
+    <!-- Horizontal menu content-->
+    <div data-menu="menu-container" class="navbar-container main-menu-content container center-layout ">
+        <!-- include ../../../includes/mixins-->
+
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="nav navbar-nav">
+
+
+            <li data-menu="dropdown" class="dropdown nav-item">
+               <div class="logo">
+                <img alt="stack admin logo" src="/images/logo/opencontest-logo.png" class="brand-logo">
+                <h2 class="brand-text">Opencontest</h2>
+               </div>
+            </li>
+
+            <li data-menu="dropdown" class="dropdown nav-item"><a href="/"  class="dropdown-toggle nav-link"><i class="ft-home"></i><span>{{Main}}</span></a>
+            </li>
+
+
+            <li data-menu="dropdown" class="dropdown nav-item"><a href="/contests"  class="dropdown-toggle nav-link"><i class="ft-activity"></i><span>{{ Contests }}</span></a>
+            </li>
+
+
+            <li data-menu="dropdown" class="dropdown nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link"><i class="ft-box"></i><span>{{Services}}</span></a>
+                <ul class="dropdown-menu">
+                    <li data-menu><a href="/edi" class="dropdown-item">{{EDIVisualizer}}</a>
+                    </li>
+                    <li data-menu=""><a href="/qsomap/index.html" class="dropdown-item">{{QSOMap}}</a>
+                    </li>
+                    <li data-menu=""><a href="http://www.opencontest.org/contest/soft/paperqso.zip" class="dropdown-item">{{PaperQSO}}</a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav float-xs-right">
+            <li class="dropdown dropdown-language nav-item"><a id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle-lang nav-link"><i class="flag-icon flag-icon-{{lang}}"></i><span class="selected-language"></span></a>
+                <div aria-labelledby="dropdown-flag" class="dropdown-menu"><a href="javascript:changeLang('uk');" class="dropdown-item"><i class="flag-icon flag-icon-ua"></i> Ukrainian</a><a href="javascript:changeLang('en');" class="dropdown-item"><i class="flag-icon flag-icon-en"></i> English</a><a href="javascript:changeLang('ru');" class="dropdown-item"><i class="flag-icon flag-icon-ru"></i> Russian</a></div>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</div>
+
+
+<div class="app-content container center-layout mt-2">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">

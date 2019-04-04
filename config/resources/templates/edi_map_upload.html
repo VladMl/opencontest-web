@@ -1,0 +1,58 @@
+{{> header}}
+
+
+
+<script type="text/javascript">
+       $(document).ready(function() {
+            $.getScript("/js/dropzone.min.js", function(data, textStatus, jqxhr) {
+                   Dropzone.autoDiscover = false;
+
+                   $("#dpz-single-file").dropzone({
+                       paramName: "file", // The name that will be used to transfer the file
+                       maxFilesize: 1, // MB
+                       success: function(file, response) {
+
+                              if (response.result == "true") {
+                                  window.location.href="/edi/map/"+response.filename;
+                              }
+
+                              if (response.indexOf('error') != -1) {
+                                 swal({
+                                      html: true,
+                                      title: '<b>Error</b>',
+                                      text: '<b>TEXT</b>'
+                                 });
+                                 $(file.previewElement).remove();
+                              }
+                       }
+                   });
+            });
+       });
+     </script>
+
+<div class="row">
+    <div class="content-header-left col-md-12 col-12 mb-2">
+        <h3 class="content-header-title mb-0">[#EDIVisualizer]</h3>
+        <br>
+    </div>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="card">
+            <div class="card-header no-border-bottom">
+                <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="card-block">
+                <div class="card-body">
+                    <form action="/edi/map/upload"  class="dropzone dropzone-area" id="dpz-single-file" enctype="multipart/form-data">
+                        <div class="dz-message">[#DropEDIFileShowMap]</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

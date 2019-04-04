@@ -1,0 +1,58 @@
+<div class="table-responsive">
+    <table class="table table-hover mb-0 ps-container ps-theme-default">
+        <thead class="bg-info">
+        <tr>
+            <th>{{ Date }}</th>
+            <th>{{ ContestName }}</th>
+            <th>{{ State }}</th>
+            <th>{{ Results }}</th>
+            <th>{{ Reports }}</th>
+            <th></th>
+        </tr>
+        </thead>
+        {{#contestListItems}}
+
+        <tr>
+            <td>{{ formattedDate }}</td>
+            <td>{{ contestTitleTemplate }}</td>
+            <td class="text-truncate"><span class="badge badge-default {{ badgeClass }}">{{ stateTitleTemplate }}</span></td>
+            <td align="center">
+                {{ #stateNotStarted }}
+                   <a href="participants/{{ contestSchedulesId }}"> {{ ListOfParticipants }} </a>
+                {{ /stateNotStarted }}
+                {{ #stateReportsLoading }}
+                   <a href="results/claimed/{{ contestSchedulesId }}"> {{ ClaimedResults }} </a>
+                {{ /stateReportsLoading  }}
+                {{ #stateReportsExchanging }}
+                   <a href="results/claimed/{{ contestSchedulesId }}"> {{ ClaimedResults }} </a>
+                {{ /stateReportsExchanging  }}
+                {{ #stateResultsPublished }}
+                    {{ #resultOverall }}
+                      <a href="results/final/all/{{ contestSchedulesId }}"> {{ OverallResults }} </a>&nbsp;
+                    {{ /resultOverall }}
+                    {{ #resultUkraine }}
+                      <a href="results/final/ukraine/{{ contestSchedulesId }}"> {{ UkraineResults }} </a>
+                    {{ /resultUkraine }}
+                {{ /stateResultsPublished  }}
+
+
+
+
+
+
+            </td>
+            <td align="center">
+                {{ #stateReportsLoading }}
+                   <i class="ft-upload"></i><span><a href="upload/{{ contestSchedulesId }}"> {{ UploadReport }} </a></span>
+                {{ /stateReportsLoading  }}
+                {{ #stateResultsPublished }}                     
+                   <i class="ft-download"></i><span><a href="files/reports/{{ reportsZipName }}"> {{ DownloadReport }} </a></span>
+                {{ /stateResultsPublished  }}
+
+            </td>
+        </tr>
+        {{/contestListItems}}
+        <tbody>
+        </tbody>
+    </table>
+</div>
